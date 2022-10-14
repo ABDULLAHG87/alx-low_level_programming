@@ -2,7 +2,7 @@
 
 /**
  * main - Entry Point
- * Task 8: Patience, persistence and perspiration
+ * Task 9: Patience, persistence and perspiration
  * Return: Always 0 (Success)
  */
 
@@ -12,9 +12,14 @@ int main(void)
 
 	for (number = 48; number <= 57; number++)
 	{
-		putchar(number)
-		putchar(',');
-		putchar(32);
+		if (number < 57)
+		{
+			putchar(number);
+			putchar(',');
+			putchar(32);
+		}
+		else
+			putchar(number);
 	}
 	putchar('\n');
 	return (0);
