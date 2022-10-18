@@ -12,9 +12,14 @@ int print_last_digit(int n)
 	int absolute;
 
 	if (n < 0)
+	{
 		absolute = n * -1;
+		result = absolute % 10;
+	}
 	else
+	{
 		absolute = n * 1;
-	result = absolute % 10;
+		_putchar('0' + absolute % 10);
+	}
 	return (result);
 }
