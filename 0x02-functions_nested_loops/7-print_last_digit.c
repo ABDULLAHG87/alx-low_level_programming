@@ -20,6 +20,7 @@ int print_last_digit(int n)
 	{
 		absolute = n * 1;
 		_putchar('0' + absolute % 10);
+		_putchar('0' + absolute % 10);
 	}
 	return (result);
 }
