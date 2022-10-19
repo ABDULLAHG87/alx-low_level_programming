@@ -8,21 +8,13 @@
 
 int print_last_digit(int n)
 {
-	int absolute;
-	int flag;
+	int last;
 
-	if (n < 0)
-	{
-		absolute = n * -1;
-		_putchar('0' + absolute % 10);
-		flag = -1;
-	}
-	else
-	{
-		absolute = n * 1;
-		_putchar('0' + absolute % 10);
-		flag = 1;
-
-	}
-	return (flag);
+	if(n < 0)
+		n = -n;
+	last = n % 10;
+	if (last < 0)
+		last = -last;
+	_putchar ('0' + last);
+	return (last);
 }
