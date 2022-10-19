@@ -8,19 +8,21 @@
 
 int print_last_digit(int n)
 {
-	int result;
 	int absolute;
+	int flag;
 
 	if (n < 0)
 	{
 		absolute = n * -1;
-		result = absolute % 10;
+		_putchar('0' + absolute % 10);
+		flag = -1;
 	}
 	else
 	{
 		absolute = n * 1;
 		_putchar('0' + absolute % 10);
-		_putchar('0' + absolute % 10);
+		flag = 1;
+
 	}
-	return (result);
+	return (flag);
 }
