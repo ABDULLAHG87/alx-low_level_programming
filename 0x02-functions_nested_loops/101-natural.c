@@ -19,6 +19,6 @@ int main(void)
 			sum += num;
 		}
 	}
-	printf("sum of multiples: %d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
