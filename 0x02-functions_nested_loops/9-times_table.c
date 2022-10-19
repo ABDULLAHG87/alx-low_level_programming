@@ -15,22 +15,46 @@ void times_table(void)
 	{
 		for (col = 0; col < 10; col++)
 		{
-			result = row * col;
-			if (result <= 9)
+			if (col == 0)
 			{
-				_putchar(' ');
-				_putchar('0' + result);
-				_putchar(',');
-				_putchar (' ');
+				result = row * col;
+ 			       	_putchar('0' + result);
+		       		_putchar(',');
+		      		_putchar(' ');
 			}
+			else if (col >= 0 && col != 9)
+			{
+				result = row * col;
+				if (result <= 9)
+				{
+					_putchar(' ');
+					_putchar('0' + result);
+					_putchar(',');
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar('0' + result / 10);
+					_putchar('0' + result % 10);
+					_putchar(',');
+					_putchar(' ');
+				}
+			  }
 			else
 			{
-				_putchar('0' + result / 10);
-				_putchar('0' + result % 10);
-				_putchar(',');
-				_putchar(' ');
+				result = row * col;
+				if (result <= 9)
+				{
+					_putchar(' ');
+					_putchar('0' + result);
+				}
+				else
+				{
+					_putchar('0' + result / 10);
+					_putchar('0' + result % 10);
+				}
 			}
-		 }
+		}
 		_putchar('\n');
 	}
 }
