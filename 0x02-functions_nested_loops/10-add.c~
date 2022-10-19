@@ -1,0 +1,5 @@
+#include "main.h"
+
+/**
+ * add - this function adds two integers
+ * @digit_1: integer 1;
