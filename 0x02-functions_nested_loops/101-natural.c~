@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include "main.h"
+
+/**
+ * main - Entry Point
+ * Return: 0 (Success)
+ */
+
+int main(void)
+{
+	int num;
+	int sum = 0;
+
+	for (num = 1; num < 10; num++)
+	{
+		if ((num % 3 == 0) || ((num % 5) == 0))
+		{
+			printf("%d, ", num);
+			sum += num;
+		}
+	}
+	printf("sum of multiples: %d\n", sum);
+	return (0);
+}
