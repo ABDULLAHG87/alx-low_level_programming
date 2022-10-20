@@ -7,7 +7,6 @@
 
 int main(void)
 {
-	int n = 100;
 	int i;
 	int n1 = 1;
 	int n2 = 2;
