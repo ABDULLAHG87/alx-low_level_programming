@@ -12,7 +12,6 @@ int main(void)
 	int next_term = 0;
 
 	next_term = n1 + n2;
-	printf("%d, %d, ", n1, n2);
 	while (next_term <= 50)
 	{
 		printf("%d, ", next_term);
