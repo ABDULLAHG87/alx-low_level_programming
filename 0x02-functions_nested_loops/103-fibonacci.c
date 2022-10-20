@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+/**
+ * main - Entry Point
+ * Return: 0 (Success)
+ */
+
+int main(void)
+{
+	int i;
+	long int n1 = 1;
+	long int n2 = 2;
+	long int fib_num;
+	long long int sum = 0;
+
+	for (i = 0; i < 48; i++)
+	{
+		fib_num = n1 + n2;
+		n1 = n2;
+		n2 = fib_num;
+		if (fib_num < 4000000)
+		{
+			if (fib_num % 2 == 0)
+				sum += fib_num;
+		}
+	}
+	printf("%lld\n", sum);
+	return (0);
+}
