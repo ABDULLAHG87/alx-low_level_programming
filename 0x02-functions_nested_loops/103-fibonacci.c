@@ -8,12 +8,12 @@
 int main(void)
 {
 	int i;
-	long int n1 = 1;
-	long int n2 = 2;
+	long int n1 = 0;
+	long int n2 = 1;
 	long int fib_num;
 	long int sum = 0;
 
-	for (i = 0; i < 48; i++)
+	for (i = 0; i < 50; i++)
 	{
 		fib_num = n1 + n2;
 		n1 = n2;
