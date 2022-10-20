@@ -11,7 +11,7 @@ int main(void)
 	long int n1 = 1;
 	long int n2 = 2;
 	long int fib_num;
-	long long int sum = 0;
+	long int sum = 0;
 
 	for (i = 0; i < 48; i++)
 	{
@@ -24,6 +24,6 @@ int main(void)
 				sum += fib_num;
 		}
 	}
-	printf("%lld\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
