@@ -7,18 +7,20 @@
 
 int main(void)
 {
-	int n1 = 0;
-	int n2 = 1;
-	int next_term = 0;
+	int n = 100;
+	int i;
+	int n1 = 1;
+	int n2 = 2;
+	int fib_num;
 
-	next_term = n1 + n2;
-	while (next_term <= 50)
+	printf("%d, %d", n1, n2);
+	for (i = 0; i < 50; i++)
 	{
-		printf("%d, ", next_term);
+		fib_num = n1 + n2;
+		printf(", %d", fib_num);
 		n1 = n2;
-		n2 = next_term;
-		next_term = n1 + n2;
+		n2 = fib_num;
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
