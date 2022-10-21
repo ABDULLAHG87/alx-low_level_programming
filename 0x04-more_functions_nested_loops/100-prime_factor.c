@@ -23,7 +23,7 @@ int main(void)
 			num /= divisor;
 			if (num == 1)
 			{
-				printf("Largest prime factor: %ld\n", max_prime);
+				printf("%ld\n", max_prime);
 				break;
 			}
 		}
