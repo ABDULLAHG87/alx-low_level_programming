@@ -1,0 +1,1 @@
+This Read me is for Pointers Arrays and Strings
