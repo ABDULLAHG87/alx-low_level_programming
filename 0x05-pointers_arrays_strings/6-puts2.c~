@@ -1,0 +1,20 @@
+#include "main.h"
+
+/**
+ * puts2 - function that prints odd character of a string
+ * @str: String Value
+ * Return: null;
+ */
+
+void puts2(char *str)
+{
+	int len;
+
+	for (len = 0; *str != '\0'; str++)
+	{
+		if (len % 2 == 0)
+			_putchar(str[len]);
+		len++;
+	}
+	_putchar('\n');
+}
