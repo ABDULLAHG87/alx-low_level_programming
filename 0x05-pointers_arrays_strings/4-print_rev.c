@@ -8,8 +8,8 @@
 
 void print_rev(char *s)
 {
-	unsigned long int len;
-	unsigned long int i;
+	long int len;
+	long int i;
 
 	for (len = 0; *s != '\0'; s++)
 		len++;
