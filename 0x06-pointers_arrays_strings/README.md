@@ -1,0 +1,1 @@
+This readme is for the Project 0x06 more with Array Pointers and Strings
