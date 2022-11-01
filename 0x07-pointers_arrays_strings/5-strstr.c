@@ -2,9 +2,9 @@
 
 /**
  * _strstr - The function that locates a substring
- * @hyastack: Main String
- * @needle:
- * Return: string s
+ * @haystack: Main String
+ * @needle: substring
+ * Return: string value
  */
 
 char *_strstr(char *haystack, char *needle)
