@@ -31,20 +31,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		concat[concat_index++] = s1[index];
 	}
-	if (n >= len2)
+	for (index = 0; index < n; index++)
 	{
-		for (index = 0; s2[index]; index++)
-		{
-			concat[concat_index++] = s2[index];
-		}
+		concat[concat_index++] = s2[index];
 	}
-	else
-	{
-		for (index = 0; index < n; index++)
-		{
-			concat[concat_index++] = s2[index];
-		}
-	}
-
 	return (concat);
 }
