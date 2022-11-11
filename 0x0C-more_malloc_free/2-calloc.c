@@ -1,28 +1,43 @@
 #include "main.h"
 #include <stdlib.h>
 
+
 /**
- * _calloc - Allocate memory for array of nmemb elements of size bytes
- * @nmemb: Number of elemnts
- * @size: Size in bytes of elements
+ * _bzero - set all the bytes to 0.
+ * @dst: pointer to propigate.
+ * @size: of the memory per-byte.
  *
- * Return: Pointer to new memory, NULL if it fails
+ * Return: pointer to memory area dst.
+ */
+
+void *_bzero(void *dst, unsigned int size)
+{
+	char *d = dst;
+
+	do
+		* d++ = 0;
+	while (--size != 0);
+
+	return (d);
+}
+
+/**
+ * _calloc - create and array using calloc
+ * @nmemb: number elements.
+ * @size: size of the type.
+ *
+ * Return: pointer to the memory.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *ar;
-	unsigned int ar_size, n;
+	void *ptr;
 
-	if (nmemb == 0 || size == 0)
+	if (!nmemb || !size)
 		return (NULL);
-	ar_size = nmemb * size;
-	ar = malloc(ar_size);
-	if (ar == NULL)
+	ptr = malloc(nmemb * size);
+	if (!ptr)
 		return (NULL);
-	while (n < ar_size)
-	{
-		ar[n] = 0;
-		n++;
-	}
-	return (ar);
+
+	_bzero(ptr, nmemb * size);
+	return (ptr);
 }
