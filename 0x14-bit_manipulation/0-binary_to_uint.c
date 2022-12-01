@@ -34,7 +34,7 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 	{
-		return (-1);
+		return (0);
 	}
 
 	blen = _strlen(b);
