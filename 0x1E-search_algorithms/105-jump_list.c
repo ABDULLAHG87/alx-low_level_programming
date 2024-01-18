@@ -25,7 +25,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		return (NULL);
 	}
 
-	for (node = jump = list; jump->index + 1 < size && jump->n < value;)
+	for (node = jump = list; jump->index < size - 1 && jump->n < value;)
 	{
 		node = jump;
 		for (step += step_size; jump->index < step; jump = jump->next)
